@@ -6,6 +6,7 @@ gem 'pg', '~> 0.18.4'
 gem 'tzinfo-data', '~> 1.2016', '>= 1.2016.4', platforms: [:mingw, :mswin, :x64_mingw, :jruby] # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'active_model_serializers', '~> 0.10.0'
 gem 'puma', '~> 3.4'
+gem 'devise', '~> 4.1', '>= 4.1.1'
 
 group :development do
 	gem 'spring', '~> 1.7', '>= 1.7.1'

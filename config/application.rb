@@ -42,7 +42,8 @@ module PsdbApi
         g.javascripts = false
         g.helper = false
     end
-    config.autoload_paths += %W(\#{config.root}/lib)
-    
+
+    # Load lib classes
+    config.autoload_paths += %W(#{config.root}/lib)
   end
 end
