@@ -1,0 +1,22 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *default
+  database: psdb-api_development
+  username: postgres
+  password: <%= ENV['DEV_PASSWORD'] %>
+
+test:
+  <<: *default
+  database: psdb-api_test
+  username: postgres
+  password: <%= ENV['DEV_PASSWORD'] %>
+
+production:
+  <<: *default
+  database: psdb-api_production
+  username: postgres
+  password: <%= ENV['DEV_PASSWORD'] %>
