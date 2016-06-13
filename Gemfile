@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '~> 4.2', '>= 4.2.6'
 gem 'rails-api', '~> 0.4.0'
 gem 'pg', '~> 0.18.4'
+gem 'tzinfo-data', '~> 1.2016', '>= 1.2016.4', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'active_model_serializers', '~> 0.10.0'
 gem 'puma', '~> 3.4'
 
@@ -16,6 +17,7 @@ group :test do
 	gem 'ffaker', '~> 2.2'
 end
 
+# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
